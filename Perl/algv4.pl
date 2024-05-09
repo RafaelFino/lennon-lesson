@@ -87,7 +87,7 @@ sub parseARGV
       return -2;
     }
   }
-  my $c=$ARGV[1];
+  my $c=$ARGV[1] // 0;
   @ARGV=();
   if((defined $c)&&($c=~/^[1-9]\d*$/))
   {
