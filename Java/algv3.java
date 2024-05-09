@@ -67,6 +67,7 @@ public class algv3
 				}
 				catch(NumberFormatException e)
 				{
+					s.close();
 					return null;
 				}
 			}
@@ -85,6 +86,7 @@ public class algv3
 			}
 			v[size++]=x;
     }
+	s.close();
 		len=size;
 		cap=cp;
 		return v;
@@ -175,7 +177,7 @@ public class algv3
 	public static void main(String args[])
 	{
 		//String execfile=new java.io.File(algv1.class.getProtectionDomain().getCodeSource().getLocation().getPath()).getName();
-		String execfile=algv1.class.getName();
+		String execfile=algv3.class.getName();
 
 		if(args.length<1)
 		{

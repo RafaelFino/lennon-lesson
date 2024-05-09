@@ -67,6 +67,7 @@ public class algv1
 				}
 				catch(NumberFormatException e)
 				{
+					s.close();
 					return null;
 				}
 			}
@@ -85,6 +86,7 @@ public class algv1
 			}
 			v[size++]=x;
     }
+	s.close();
 		len=size;
 		cap=cp;
 		return v;
