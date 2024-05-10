@@ -98,7 +98,7 @@ sub parseARGV
   {
     chomp($line);
     #push @ARGV, $line;
-    $ARGV[$x++]=$line;
+    $ARGV[$x++]=int($line);
   }
   if($x>0)
   {
